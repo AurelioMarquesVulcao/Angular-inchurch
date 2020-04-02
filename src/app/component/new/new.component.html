@@ -1,0 +1,126 @@
+
+ <div class="container mt-4">
+  <div class="col-sm-6 col-md-4 mb-4">
+    <div class="card">
+      <!-- Start Add User -->
+      <div class="card-body  mx-auto">
+        <h4 class="card-title">Add New User</h4>
+      </div>
+      <ul class="list-group ">
+        
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <input name="name" [(ngModel)]="user.name" type="text" class="form-control" placeholder="Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <input name="job" [(ngModel)]="user.job" type="text" class="form-control" placeholder="Job" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button (click) = "add()" class="btn btn-primary" type="button" id="button-addon2">Add</button>
+            </div>
+          </div>
+        </li>
+      
+      </ul>
+      <!-- End Add User -->
+      <!-- Start Update User -->
+      <div class="card-body  mx-auto">
+        <h4 class="card-title">Update User by ID</h4>
+      </div>
+      <ul class="list-group ">
+      
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <input name="name"[(ngModel)]="user.id" type="text" class="form-control" placeholder="ID" aria-label="Recipient's username" aria-describedby="button-addon2">
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <input name="name"[(ngModel)]="user.name" type="text" class="form-control" placeholder="Name" aria-label="Recipient's username" aria-describedby="button-addon2">
+          </div>
+        </li>
+        <li class="list-group-item">
+          <div class="input-group mb-1">
+            <input name="job"[(ngModel)]="user.job" type="text" class="form-control" placeholder="Job" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button (click) = "update()" class="btn btn-primary" type="button" id="button-addon2">Button</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- End Update User -->
+      <!-- Start Delete User -->
+      <div class="card-body  mx-auto">
+        <h4 class="card-title">Delete User by ID</h4>
+      </div>
+      <ul class="list-group ">
+        
+        <li class="list-group-item">
+
+          <div class="input-group mb-2">
+            <input name="id"[(ngModel)]="user.id" type="text" class="form-control" placeholder="User ID To Delete" aria-label="Recipient's username" aria-describedby="button-addon2" >
+            <div class="input-group-append">
+              <button class="btn btn-primary" type="button" id="button-addon2" (click) = "delete()" >Delete</button>
+            </div>
+          </div>
+
+        </li>
+      </ul>
+      <!-- End Delete User -->
+  </div>
+</div>
+
+<!-- Keep this code to guide future changes.
+The code below is API consumption without Bootstrap CSS. -->
+
+<!-- <h2>New User</h2>
+
+<form>
+<p>Name: <input type="text" name="name" [(ngModel)]="user.name"></p>
+<p>Job: <input type="text" name="job" [(ngModel)]="user.job"></p>
+<div>
+  <button type="button" (click) = "add()">Add</button>
+</div>
+</form>
+
+<h2>Update</h2>
+<form>
+  <p>id: <input type="text" name="name"[(ngModel)]="user.id"></p>
+  <p>Name: <input type="text" name="name"[(ngModel)]="user.name"></p>
+  <p>Job: <input type="text" name="job"[(ngModel)]="user.job"></p>
+  <div>
+    <button type="button" (click) = "update()">Add</button>
+  </div>
+</form>
+
+<h2>Delete</h2>
+<form>
+  <p>id: <input type="text" name="id"[(ngModel)]="user.id"></p>
+  <div>
+    <button type="button" (click) = "delete()">Add</button>
+  </div>
+</form>
+
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm">Small</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+</div>
+
+
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Button</button>
+  </div>
+  <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+</div>
+
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+  <div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+  </div>
+</div> -->
